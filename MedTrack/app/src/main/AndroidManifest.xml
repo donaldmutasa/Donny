@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cs442team4.medtrack"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name=".TrackerActivity"
+            android:label="@string/title_activity_tracker" >
+        </activity>
+        <activity
+            android:name=".CreateMedActivity"
+            android:label="@string/title_activity_create_med" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".MedicineActivity"
+            android:label="@string/title_activity_medicine" >
+        </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name=".PrescriptionActivity"
+            android:label="@string/title_activity_prescription" >
+        </activity>
+        <activity
+            android:name=".EditMedicineActivity"
+            android:label="@string/title_activity_edit_medicine" >
+        </activity>
+
+        <receiver android:name=".helper.ReminderReceiver" />
+
+        <activity
+            android:name=".ReminderViewActivity"
+            android:label="@string/title_activity_reminder_view" >
+        </activity>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password" >
+        </activity>
+
+        <receiver
+            android:name=".helper.MyWidgetProvider"
+            android:icon="@drawable/ic_launcher"
+            android:label="MedTrack" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".ImageFullScreenActivity"
+            android:label="@string/title_activity_image_full_screen" >
+        </activity>
+    </application>
+
+</manifest>

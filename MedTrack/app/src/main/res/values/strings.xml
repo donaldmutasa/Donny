@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MedTrack</string>
+    <string name="title_activity_medicine">MedTrack</string>
+    <string name="title_activity_history">MedTrack History</string>
+    <string name="title_activity_prescription">MedTrack Prescription</string>
+    <string name="title_activity_edit_medicine">Edit Medicine</string>
+    <string name="title_activity_reminder_view">MedTrack</string>
+    <string name="title_activity_registration">MedTrack Registration</string>
+    <string name="title_activity_tracker">MedTrack</string>
+    <string name="title_activity_create_med">MedTrack Create Medicine</string>
+    <string name="prompt">Select the icon</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_image_full_screen">ImageFullScreenActivity</string>
+
+</resources>
